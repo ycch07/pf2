@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국알콜산업 KAI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/wgnb.css">
+    <link rel="stylesheet" href="css/subtitle.css">
+    <link rel="stylesheet" href="css/company-about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#green .wrap ul li").click(function(){
+                $(this).addClass("current");
+                $(this).siblings().removeClass("current");
+           });
+           //gnb의 li를 click하면 실행하시오
+           $("header .wrap nav ul.gnb li").mouseenter(function(){ //mouseenter 대상영역안으로 마우스가 진입하는 행위
+                $("div.wgnb").slideDown();    //slideDown() 펼쳐지면서 보여지게 해라 
+           });
+
+           //타이틀영역에 마우스엔터하면 실행하시오
+           $("div#title").mouseenter(function(){
+                $("div.wgnb").slideUp();
+           });
+        });
+    </script> 
+</head>
+<body>  
+    <!-- 상단영역 -->
+    <header id="top">
+        <div class="wrap">
+            <nav>
+                <h1 class="h5">
+                    <a href="" class="a">한국알콜산업<span>KAI</span></a>
+                </h1>
+                <ul class="gnb flex">
+                    <li><a href="" class="a">회사소개</a></li>
+                    <li><a href="" class="a">제품소개</a></li>
+                    <li><a href="" class="a">지속가능경영</a></li>
+                    <li><a href="" class="a">투자정보</a></li>
+                    <li><a href="" class="a">홍보센터</a></li>
+                    <li><a href="" class="a">인재채용</a></li>
+                </ul>
+                <div class="flex">
+                    <ul class="lang flex">
+                        <li><a href="" class="a">KOR</a></li>
+                        <li><a href="" class="a">ENG</a></li>
+                        <li><a href="" class="a">CHN</a></li>
+                    </ul>
+                    <form action="" class="search"><button>SEARCH</button></form>
+                </div>
+                <div class="wgnb">
+                    <div class="center flex">
+                        <div class="wsub">
+                            <h2 class="hide">회사소개</h2>
+                            <ul class="text-center">
+                                <li><a href="">회사개요</a></li>
+                                <li><a href="">CEO 인사말</a></li>
+                                <li><a href="">가치체계</a></li>
+                                <li><a href="">연구소</a></li>
+                                <li><a href="">관계사</a></li>
+                                <li><a href="">사업장</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">제품소개</h2>
+                            <ul class="text-center">
+                                <li><a href="">제품정보</a></li>
+                                <li><a href="">주정</a></li>
+                                <li><a href="">석유화학</a></li>
+                                <li><a href="">Color Paste</a></li>
+                                <li><a href="">제품문의</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">지속가능경영</h2>
+                            <ul class="text-center">
+                                <li><a href="">정도경영</a></li>
+                                <li><a href="">환경경영</a></li>
+                                <li><a href="">품질경영</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">투자정보</h2>
+                            <ul class="text-center">
+                                <li><a href="">경영정보</a></li>
+                                <li><a href="">주가정보</a></li>
+                                <li><a href="">재무정보</a></li>
+                                <li><a href="">IR자료실</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">홍보센터</h2>
+                            <ul class="text-center">
+                                <li><a href="">KAI소식</a></li>
+                                <li><a href="">CI소개</a></li>
+                                <li><a href="">사회공헌</a></li>
+                            </ul>
+                        </div>
+                        <div class="wsub">
+                            <h2 class="hide">인재채용</h2>
+                            <ul class="text-center">
+                                <li><a href="">인사제도</a></li>
+                                <li><a href="">채용정보</a></li>
+                                <li><a href="">채용문의</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="ham">전체메뉴</a>
+            </nav>
+        </div>
+    </header>
+    <!--타이틀영역 -->
+    <div id="subtitle" class="height-full">
+        <div class="height-full wrap flex flex-column flex-center flex-align-center">
+            <hgroup>
+                <h2 class="h4 text-center">회사개요</h2>
+                <h3 class="h1">ABOUT US</h3>
+            </hgroup>
+            <p href="" class="pheight-full wrap flex flex-column flex-center flex-align-center">
+                대한민국을 대표하는 화학 기업 한국알콜산업<span class="block"></span>
+                편리하고 행복한 세상을 위해 끊임없이 성장하는 기업이 되겠습니다.
+            </p>
+        </div>
+    </div>
+    <!-- about내용영역 -->
+    <main id="about">
+        <section>
+            <div class="wrap">
+                <nav class="breadcrumb">
+                    <ol>
+                        <li><a href="">home</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">회사개요</a></li>
+                    </ol>
+                </nav>
+                <article>
+                    <hgroup>
+                        <h4 class="h3">국내 유일 생산업체</h4>
+                        <h5 class="h2">One and Only</h5>
+                    </hgroup>
+                    <p class="p"> 한국알콜산업은 국내 유일의 공업용 에탄올, 초산에틸, 초산부틸 생산업체입니다.<br> 우수한 품질과 끊임없는 연구개발로 저가 수입품과의 경쟁에서도<span class="block"></span> 우위를 점하고 있습니다.
+                    </p>
+                </article>
+                <article>
+                    <hgroup>
+                        <h4 class="h3">첨단 정밀화학 소재</h4>
+                        <h5 class="h2">Electronic Materials</h5>
+                    </hgroup>
+                    <p class="p"> 한국알콜산업은 축적된 노하우와 기술력을 바탕으로 전자급 초산부틸, 전자급 무수주정, Color Paste 등 반도체 및 디스플레이 관련<span class="block"></span> 정밀화학 소재 시장에 진출하였습니다.<br>
+                    </p>
+                    <p class="p">고순도, 고품질의 제품 생산을 통해 편리하고 행복한 세상을 만드는 데<span class="block"></span> 이바지 하겠습니다. </p>
+                </article>
+                <article>
+                    <hgroup>
+                        <h4 class="h3">성장을 위한 지속적인 투자</h4>
+                        <h5 class="h2">Grow UP</h5>
+                    </hgroup>
+                    <p class="p">한국알콜산업은 안정적인 사업구조에 안주하지 않고<span class="block"></span> 연구·개발에 대해 아낌없는 투자를 하여<span class="block"></span> 제품군의 다양화를 위한 노력을 하고 있습니다.</p><p class="p"> 주정 및 화학제품 외에도 전자재료까지<span class="block"></span> 그 영역을 넓혀가고 있습니다. </p>
+                </article>
+                <article class="basicinfo">
+                    <h4 class="hide">회사기본정보</h4>
+                    <ul>
+                        <li class="p">회사명<strong>한국알콜산업㈜</strong></li>
+                        <li class="p">대표이사<strong>지용석, 김정수, 유정림</strong></li>
+                        <li class="p">설립일<strong>1984년 7월</strong></li>
+                        <li class="p">주요사업<strong>주정 및 석유화학제품 제조</strong></li>
+                        <li class="p">자본금<strong>108억</strong></li>
+                        <li class="p">본점<strong>경기도 용인시 기흥구</strong></li>
+                        <li class="p">지점 / 공장<strong>울산시 남구 상개로</strong></li>
+                    </ul>
+                </article>
+                <article class="history">
+                    <ul class="list flex">
+                        <li class="h5">
+                            <time class="h6">1985.08</time>정제주정 준공</li>
+                        <li class="h5">
+                            <time class="h6">2005.09</time>CP생산설비 준공</li>
+                        <li class="h5">
+                            <time class="h6">2016.06</time>사옥이전</li>
+                        <li class="h5">
+                            <time class="h6">2017.04</time>초산에틸공장 증설</li>
+                    </ul>
+                    <ul class="detail">
+                        <li class="flex">
+                            <h5 class="h3">2010~2017</h5>
+                            <ul class="detaillist">
+                                <li>
+                                    <time>2017.04</time>초산에틸 공장 증설
+                                </li>
+                                <li>
+                                    <time>2017.01</time>New VISION 선포
+                                </li>
+                                <li>
+                                    <time>2016.06</time>New CI 선포
+                                </li>
+                                <li>
+                                    <time>2016.06</time>신사옥 이전(기흥)
+                                </li>
+                                <li>
+                                    <time>2015.09</time>OHSAS 18001 취득
+                                </li>
+                                <li>
+                                    <time>2010.03</time>무수주정 공장 증설
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="flex">
+                            <h5 class="h3">2000~</h5>
+                            <ul class="detaillist">
+                                <li>
+                                    <time>2007.04</time>국제에스터 영업양수
+                                </li>
+                                <li>
+                                    <time>2005.09</time>Color Paste 공장 준공
+                                </li>
+                                <li>
+                                    <time>2001.06</time>ISO 9001 / 14001 취득
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="flex">
+                            <h5 class="h3">1990~</h5>
+                            <ul class="detaillist">
+                                <li>
+                                    <time>1999.04</time>전자급 초산부틸 공장 준공
+                                </li>
+                                <li>
+                                    <time>1998.11</time>에틸아민 공장 준공
+                                </li>
+                                <li>
+                                    <time>1998.09</time>초산부틸 공장 증설
+                                </li>
+                                <li>
+                                    <time>1997.02</time>무수주정 공장 증설
+                                </li>
+                                <li>
+                                    <time>1993.08</time>합작투자법인 국제에스터 설립
+                                </li>
+                                <li>
+                                    <time>1990.08</time>코스닥 시장 상장
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="flex">
+                            <h5 class="h3">1980~</h5>
+                            <ul class="detaillist">
+                                <li>
+                                    <time>1989.02</time>초산에틸 공장 준공
+                                </li>
+                                <li>
+                                    <time>1987.07</time>무수주정 공장 준공
+                                </li>
+                                <li>
+                                    <time>1985.08</time>정제주정 공장 준공
+                                </li>
+                                <li>
+                                    <time>1984.07</time>한국알콜산업 설립
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            
+        </section>
+    </main>
+    <!-- 하단영역 -->
+    <footer>
+        <div class="wrap padding50">
+            <ul class="fnb flex">
+                <li><a href="">정도경영</a></li>
+                <li><a href="">인재채용</a></li>
+                <li><a href="">사이트맵</a></li>
+                <li><a href="">개인정보 취급(처리)방침</a></li>
+            </ul>
+            <address>
+                기흥본사 : 경기도 용인시 기흥구 탑실로 35번길 14 TEL / <a href="">031 - 881 - 8000</a> FAX / 031 - 282 - 6851<br>
+                울산지점/공장 : 울산광역시 남구 상개로 66 TEL / <a href="">052 - 259 - 4700 FAX</a> / 052 - 259 - 4759
+            </address>
+            <p class="p copyright">COPYRIGHT (C) 2017 KAI CO., LTD. ALL RIGHTS RESERVED. DESIGNED BY STUDIO-JT.</p>
+            <div class="corp">
+                <h2 class="hide">협력업체</h2>
+                <ul>
+                    <li><a href="">케이씨엔에이</a></li>
+                    <li><a href="">이엔에프테크놀로지</a></li>
+                    <li><a href="">퓨릿</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#top" class="btop">맨위로 가기</a>
+    </footer>
+</body>
+</html>
